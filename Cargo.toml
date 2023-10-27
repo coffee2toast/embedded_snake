@@ -1,0 +1,18 @@
+[package]
+name = "embedded_snake"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7"
+
+[dependencies.stm32f7]
+version = "0.15.0"
+features = ["stm32f7x9", "rt"]
+
+[dependencies.cortex-m-rt]
+version = "0.7"
+features = ["device"]
+
